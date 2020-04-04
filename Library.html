@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--뷰포트를 이용해서 레이아웃의 크기를 웹 페이지 크기에 자동으로 맞춰줍니다.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css파일을 링크해줍니다.-->
+    <link rel="stylesheet" href="Library.css">
+</head>
+
+<body>
+    <!--왼쪽 날개 메뉴를 위한 div입니다. 
+        로고 클릭 시 처음 페이지로 이동합니다.
+        보관함 클릭 시 동영상 추가 등의 창으로 이동합니다.-->
+    <div class="sidenav">
+        <a href="DefaultLayer.html">AI TUBE</a>
+        <a id="sidebar_selected" href="Library.html">보관함</a>
+        <a href="#Subtitle">자막</a>
+        <a href="#Music">음악</a>
+        <a href="#Filter">필터</a>
+        <a href="#Sticker">스티커</a>
+        <a href="#FaceModulation">얼굴 변경</a>
+        <a href="#VoiceModulation">음성 변조</a>
+        <a href="#Speed">속도</a>
+        <a href="#Mosaic">모자이크</a>
+        <a href="#PIP">PIP</a>
+    </div>
+    <!--음성 인식으로 들어오는 자막에 대한 정보를 표시 합니다.
+        저장 버튼도 있습니다.-->
+    <div class="subtitleScreen">
+        <a id="save" href="#Save">저장</a>
+    </div>
+
+
+    <div class="pallet">
+        <button>영상추가</button>
+        <button>video 1</button>
+        <button>video 2</button>
+        <button>video 3</button>
+        <button>video 4</button>
+        <button>video 5</button>
+    </div>
+</body>
+
+</html>
