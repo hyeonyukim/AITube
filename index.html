@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    Hello, AItube!
+    <button id="playButton" onclick="videoPlayPause()">Play</button>
+    <span>0</span>
+    <input name="slider" id="slider" type="range" step="0.001" oninput="updateSlider(this.value) ">
+    <span id="end"></span>
+    <span id="current1"></span>
+    <span id="current2"></span>
+    <div ondrop="dropHandler(event)" ondragover="dragOverHandler(event)" onclick="videoPlayPause()">
+        <video id="myVideo" preload="auto" oncontextmenu="return false;" width="640" onplay="onPlay()" onpause="onPause()">
+            <source id="VID" src="" type="">
+        </video>
+    </div>
+    </video>
+    <div>
+        <input type="text" id="order" value="">
+        <input type="text" id="block" value="">
+    </div>
+    <div>
+        <input type="button" id="btn" onclick="temp(0)" value="추가">
+        <input type="button" id="btn" onclick="temp(1)" value="삭제">
+    </div>
+    <input id="newlocalFILE" name="localfile" size="50" maxlength="100000" accept="video/webm,video/mp4" type="file" onchange="loadLocalVID(true)">
+    <script src="script.js"></script>
+</body>
+<style>
+#slider
+    {
+        width: 1000px;
+    }
+</style>
+
+</html>
