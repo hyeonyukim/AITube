@@ -1,0 +1,359 @@
+{
+    "status": "ok!",
+    "user": {
+        "uid": "FTllieCREkh9LTHbKIWuQD67lKo1",
+        "email": "sinsky1@naver.com"
+    },
+    "speechRes": [
+        {
+            "time": "2020-01-10T15:17:31+09:00",
+            "speech_name": "861235753057941076"
+        }
+    ],
+    "name": "8b57f1383f071d302a35a5e4812aeaf7",
+    "speechData": [
+        {
+            "name": "861235753057941076",
+            "metadata": {
+                "@type": "type.googleapis.com\/google.cloud.speech.v1p1beta1.LongRunningRecognizeMetadata",
+                "progressPercent": 100,
+                "startTime": "2020-01-10T06:17:31.014079Z",
+                "lastUpdateTime": "2020-01-10T06:17:42.441891Z"
+            },
+            "done": true,
+            "response": {
+                "@type": "type.googleapis.com\/google.cloud.speech.v1p1beta1.LongRunningRecognizeResponse",
+                "results": [
+                    {
+                        "alternatives": [
+                            {
+                                "transcript": "번역 못 하지만 구글의 인공지능 번역 엔진을 사용을 해서 축하 앱을 만든 다음에 가운데 구글에 엔진을 넣어서 스피치 투 스피치 번역이 되면은 순식간에 고용 하지 않아도 나는 얼마든지 고급스러운 그런 회화 학원 영어 그거 제공할 수 있다 아니면은 그 어플리케이션 하나 만들어 놓으면은 5만 원으로 만들어본다 그럼 여러분들이 구글의 인공지능 번역 인증을 통해서 통역이 되는 모든 유튜브 영상을 언어와 상관없이 항구",
+                                "confidence": 0.90789497,
+                                "words": [
+                                    {
+                                        "startTime": "0s",
+                                        "endTime": "1.200s",
+                                        "word": "번역"
+                                    },
+                                    {
+                                        "startTime": "1.200s",
+                                        "endTime": "1.400s",
+                                        "word": "못"
+                                    },
+                                    {
+                                        "startTime": "1.400s",
+                                        "endTime": "1.800s",
+                                        "word": "하지만"
+                                    },
+                                    {
+                                        "startTime": "1.800s",
+                                        "endTime": "2.300s",
+                                        "word": "구글의"
+                                    },
+                                    {
+                                        "startTime": "2.300s",
+                                        "endTime": "2.500s",
+                                        "word": "인공지능"
+                                    },
+                                    {
+                                        "startTime": "2.500s",
+                                        "endTime": "3.100s",
+                                        "word": "번역"
+                                    },
+                                    {
+                                        "startTime": "3.100s",
+                                        "endTime": "3.700s",
+                                        "word": "엔진을"
+                                    },
+                                    {
+                                        "startTime": "3.700s",
+                                        "endTime": "4.100s",
+                                        "word": "사용을"
+                                    },
+                                    {
+                                        "startTime": "4.100s",
+                                        "endTime": "4.200s",
+                                        "word": "해서"
+                                    },
+                                    {
+                                        "startTime": "4.200s",
+                                        "endTime": "5s",
+                                        "word": "축하"
+                                    },
+                                    {
+                                        "startTime": "5s",
+                                        "endTime": "5.300s",
+                                        "word": "앱을"
+                                    },
+                                    {
+                                        "startTime": "5.300s",
+                                        "endTime": "5.600s",
+                                        "word": "만든"
+                                    },
+                                    {
+                                        "startTime": "5.600s",
+                                        "endTime": "6s",
+                                        "word": "다음에"
+                                    },
+                                    {
+                                        "startTime": "6s",
+                                        "endTime": "6.700s",
+                                        "word": "가운데"
+                                    },
+                                    {
+                                        "startTime": "6.700s",
+                                        "endTime": "7.200s",
+                                        "word": "구글에"
+                                    },
+                                    {
+                                        "startTime": "7.200s",
+                                        "endTime": "7.900s",
+                                        "word": "엔진을"
+                                    },
+                                    {
+                                        "startTime": "7.900s",
+                                        "endTime": "8.200s",
+                                        "word": "넣어서"
+                                    },
+                                    {
+                                        "startTime": "8.200s",
+                                        "endTime": "8.800s",
+                                        "word": "스피치"
+                                    },
+                                    {
+                                        "startTime": "8.800s",
+                                        "endTime": "9s",
+                                        "word": "투"
+                                    },
+                                    {
+                                        "startTime": "9s",
+                                        "endTime": "9.200s",
+                                        "word": "스피치"
+                                    },
+                                    {
+                                        "startTime": "9.200s",
+                                        "endTime": "9.700s",
+                                        "word": "번역이"
+                                    },
+                                    {
+                                        "startTime": "9.700s",
+                                        "endTime": "10.200s",
+                                        "word": "되면은"
+                                    },
+                                    {
+                                        "startTime": "10.200s",
+                                        "endTime": "11.200s",
+                                        "word": "순식간에"
+                                    },
+                                    {
+                                        "startTime": "11.200s",
+                                        "endTime": "12.800s",
+                                        "word": "고용"
+                                    },
+                                    {
+                                        "startTime": "12.800s",
+                                        "endTime": "13.100s",
+                                        "word": "하지"
+                                    },
+                                    {
+                                        "startTime": "13.100s",
+                                        "endTime": "13.500s",
+                                        "word": "않아도"
+                                    },
+                                    {
+                                        "startTime": "13.500s",
+                                        "endTime": "14.300s",
+                                        "word": "나는"
+                                    },
+                                    {
+                                        "startTime": "14.300s",
+                                        "endTime": "15.200s",
+                                        "word": "얼마든지"
+                                    },
+                                    {
+                                        "startTime": "15.200s",
+                                        "endTime": "16.300s",
+                                        "word": "고급스러운"
+                                    },
+                                    {
+                                        "startTime": "16.300s",
+                                        "endTime": "16.700s",
+                                        "word": "그런"
+                                    },
+                                    {
+                                        "startTime": "16.700s",
+                                        "endTime": "17s",
+                                        "word": "회화"
+                                    },
+                                    {
+                                        "startTime": "17s",
+                                        "endTime": "17.100s",
+                                        "word": "학원"
+                                    },
+                                    {
+                                        "startTime": "17.100s",
+                                        "endTime": "17.500s",
+                                        "word": "영어"
+                                    },
+                                    {
+                                        "startTime": "17.500s",
+                                        "endTime": "17.900s",
+                                        "word": "그거"
+                                    },
+                                    {
+                                        "startTime": "17.900s",
+                                        "endTime": "18.300s",
+                                        "word": "제공할"
+                                    },
+                                    {
+                                        "startTime": "18.300s",
+                                        "endTime": "18.400s",
+                                        "word": "수"
+                                    },
+                                    {
+                                        "startTime": "18.400s",
+                                        "endTime": "18.700s",
+                                        "word": "있다"
+                                    },
+                                    {
+                                        "startTime": "18.700s",
+                                        "endTime": "19.300s",
+                                        "word": "아니면은"
+                                    },
+                                    {
+                                        "startTime": "19.300s",
+                                        "endTime": "19.400s",
+                                        "word": "그"
+                                    },
+                                    {
+                                        "startTime": "19.400s",
+                                        "endTime": "20.100s",
+                                        "word": "어플리케이션"
+                                    },
+                                    {
+                                        "startTime": "20.100s",
+                                        "endTime": "20.200s",
+                                        "word": "하나"
+                                    },
+                                    {
+                                        "startTime": "20.200s",
+                                        "endTime": "20.600s",
+                                        "word": "만들어"
+                                    },
+                                    {
+                                        "startTime": "20.600s",
+                                        "endTime": "21s",
+                                        "word": "놓으면은"
+                                    },
+                                    {
+                                        "startTime": "21s",
+                                        "endTime": "22s",
+                                        "word": "5만"
+                                    },
+                                    {
+                                        "startTime": "22s",
+                                        "endTime": "22.300s",
+                                        "word": "원으로"
+                                    },
+                                    {
+                                        "startTime": "22.300s",
+                                        "endTime": "22.900s",
+                                        "word": "만들어본다"
+                                    },
+                                    {
+                                        "startTime": "22.900s",
+                                        "endTime": "23.100s",
+                                        "word": "그럼"
+                                    },
+                                    {
+                                        "startTime": "23.100s",
+                                        "endTime": "23.600s",
+                                        "word": "여러분들이"
+                                    },
+                                    {
+                                        "startTime": "23.600s",
+                                        "endTime": "24.600s",
+                                        "word": "구글의"
+                                    },
+                                    {
+                                        "startTime": "24.600s",
+                                        "endTime": "24.800s",
+                                        "word": "인공지능"
+                                    },
+                                    {
+                                        "startTime": "24.800s",
+                                        "endTime": "25.300s",
+                                        "word": "번역"
+                                    },
+                                    {
+                                        "startTime": "25.300s",
+                                        "endTime": "25.800s",
+                                        "word": "인증을"
+                                    },
+                                    {
+                                        "startTime": "25.800s",
+                                        "endTime": "26.200s",
+                                        "word": "통해서"
+                                    },
+                                    {
+                                        "startTime": "26.200s",
+                                        "endTime": "26.700s",
+                                        "word": "통역이"
+                                    },
+                                    {
+                                        "startTime": "26.700s",
+                                        "endTime": "27.100s",
+                                        "word": "되는"
+                                    },
+                                    {
+                                        "startTime": "27.100s",
+                                        "endTime": "27.500s",
+                                        "word": "모든"
+                                    },
+                                    {
+                                        "startTime": "27.500s",
+                                        "endTime": "28.100s",
+                                        "word": "유튜브"
+                                    },
+                                    {
+                                        "startTime": "28.100s",
+                                        "endTime": "28.700s",
+                                        "word": "영상을"
+                                    },
+                                    {
+                                        "startTime": "28.700s",
+                                        "endTime": "29.300s",
+                                        "word": "언어와"
+                                    },
+                                    {
+                                        "startTime": "29.300s",
+                                        "endTime": "29.700s",
+                                        "word": "상관없이"
+                                    },
+                                    {
+                                        "startTime": "29.700s",
+                                        "endTime": "30s",
+                                        "word": "항구"
+                                    }
+                                ]
+                            }
+                        ],
+                        "languageCode": "ko-kr"
+                    }
+                ]
+            }
+        }
+    ],
+    "uploadRes": [
+        {
+            "mediaLink": "https:\/\/storage.googleapis.com\/download\/storage\/v1\/b\/aitube_bucket\/o\/8b57f1383f071d302a35a5e4812aeaf7.000.mp3?generation=1578637050426182&alt=media",
+            "timeCreated": "2020-01-10T06:17:30.426Z"
+        }
+    ],
+    "file": {
+        "originalname": "temp_sound311400262.mp3",
+        "upload_time": "2020-01-10T15:17:28+09:00",
+        "path": "\/www\/uploads\/8b57f1383f071d302a35a5e4812aeaf7",
+        "number": 1
+    }
+}

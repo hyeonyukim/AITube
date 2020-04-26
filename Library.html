@@ -31,12 +31,6 @@
         </div>
     </div>
 
-    <!--파일 이름을 나타내는 단락입니다.
-        파일이 로딩 되면 나타납니다.-->
-    <div class="file_name">
-        <p>Add your video!</p>
-    </div>
-
     <!--플레이어 창을 나타내는 단락입니다. -->
     <div class="player">
         <div ondrop="dropHandler(event)" ondragover="dragOverHandler(event)" onclick="videoPlayPause()">
@@ -48,32 +42,29 @@
 
     <!--재생, 시간, 슬라이더 등이 표시되는 단락입니다.-->
     <div class="player_tools">
+        <input name="slider" id="slider" type="range" step="0.001" oninput="updateSlider(this.value) ">
         <button id="playButton" onclick="videoPlayPause()"><img src="images/playVideoButton.png" width=20px height=20px ></button>
         <span id="current1"></span>
         <span id="current2">--</span>
         <span>/</span>
         <span id="end">--</span>
-        <input name="slider" id="slider" type="range" step="0.001" oninput="updateSlider(this.value) ">
     </div>
 
     <!--편집된 현재 상황이 텍스트로 나타나는 단락입니다.
         캔버스라고 정의했습니다.-->
-    <div class="canvas">
-        <p style="font-size: 10px;">이 단락은 캔버스에 해당하는 내용을 담습니다.</p>
+    <div class="canvas" id="canvas">
+
     </div>
 
     <!--블록들을 저장하는 단락입니다.
         팔레트라고 정의했습니다.-->
-    <div class="pallet">
-        <input type="text" id="order" value="">
-        <input type="text" id="block" value="">
-        <p style="font-size: 10px;">이 단락은 팔레트에 해당하는 내용을 담습니다.</p>
+    <div class="pallet" id="pallet">
     </div>
 
     <!--편집 기능들을 저장하는 단락입니다.-->
     <div class="edit_tools">
-        <a id="save" href="#Save">저장</a>
-        <p style="font-size: 10px;">이 단락은 편집 도구에 해당하는 내용을 담습니다.</p>
+        <button id="trashBin" ondrop="streamDelete(event)" ondragover="allowDrop(event)"><img src="images/trashBinButton.png" height=40px></button>
+        <button id="save">저장</button>
     </div>
 
     <script src="script.js"></script>
