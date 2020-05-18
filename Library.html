@@ -23,7 +23,7 @@
         <a href="#FaceModulation">얼굴 변경</a>
         <a href="#VoiceModulation">음성 변조</a>
         <a href="#Speed">속도</a>
-        <a href="#Mosaic">모자이크</a>
+        <a href="ztest://">모자이크</a>
         <a href="#PIP">PIP</a>
         <div class="file_input_div">
             <img src="images/addVideoButton.png" class="file_input_img_btn" width=27.78% height=50px alt="open" />
@@ -64,7 +64,7 @@
     <!--편집 기능들을 저장하는 단락입니다.-->
     <div class="edit_tools">
         <button id="trashBin" ondrop="streamDelete(event)" ondragover="allowDrop(event)"><img src="images/trashBinButton.png" height=40px></button>
-        <button id="save">저장</button>
+        <a id="save" href = "" onclick="urlGenerator()">Export</a>
     </div>
 
     <script src="script.js"></script>

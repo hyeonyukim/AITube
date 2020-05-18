@@ -126,12 +126,13 @@ body {
 /* 비디오 스타일 정의 */
 
 #myVideo {
-    margin: 0;
+    margin: 0 0 0 -25%;
     padding: 0;
     height: 100%;
+    width: 50%;
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 50%;
     inline-size: auto;
 }
 
@@ -215,7 +216,6 @@ body {
     color: #fdfdfd;
     display: block;
     float: left;
-    overflow: auto;
     cursor: pointer;
     height: 100%;
     /* 가운데 정렬합니다. */
@@ -322,6 +322,24 @@ body {
 }
 
 .edit_tools button {
+    margin: 5px 10px 5px 10px;
+    padding: 0;
+    width: 40%;
+    height: 50px;
+    text-decoration: none;
+    background-color: #fdc23e;
+    /*border를 둥근 사각형으로 깎습니다. 중심으로부터 모서리까지의 길이를 지정합니다.*/
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 3px 0 #555;
+    font-size: 18px;
+    color: #fdfdfd;
+    display: block;
+    /* 가운데 정렬합니다. */
+    text-align: center;
+    float: left;
+}
+
+.edit_tools a {
     margin: 5px 10px 5px 10px;
     padding: 0;
     width: 40%;
