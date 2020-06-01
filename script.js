@@ -20,9 +20,34 @@ let currentBlock;
 let block = [];
 let FILE;
 
-
 function urlGenerator() {
-	
+    let url = "BeansSoft://";
+
+    let cnt = 0;
+    //startTime, endTime이 0 인 stream[0]을 처음에 넣고 시작합니다. 
+    streamCut[0] = {
+        startTime: stream[0].startTime,
+        endTime: stream[0].endTime
+    }
+    //연속된 블록들을 하나로 묶어줍니다.
+    for (i = 1; i < stream.length; i++)
+        if (stream[i].startTime == streamCut[cnt].endTime)
+            streamCut[cnt].endTime = stream[i].endTime;
+        else {
+            streamCut[++cnt] = {
+                startTime: stream[i].startTime,
+                endTime: stream[i].endTime
+            }
+        }
+    url += streamCut.length;
+    url += "?";
+    for (i = 0; i < streamCut.length; i++) {
+        url += streamCut[i].startTime.toFixed(3) * 1;
+        url += "!";
+        url += streamCut[i].endTime.toFixed(3) * 1;
+        url += "!";
+    }
+    location.href = url;
 }
 
 function loadLocalVID(x)
@@ -40,6 +65,7 @@ function loadLocalVID(x)
     myVideo.load();
     myVideo.pause();
     playButton.innerHTML = '<img src="images/playVideoButton.png" width=20px height=20px alt="">';
+    tempCurrent.innerHTML = "0.000";
 }
 
 function preProcess()
@@ -109,6 +135,7 @@ function preProcess()
         wordBtn2.setAttribute("id", "canvas_gap" + i);
         wordBtn2.setAttribute("ondrop", "dropCanvas(event)");
         wordBtn2.setAttribute("ondragover", "allowDrop(event)");
+        wordBtn2.innerHTML = "&#10004";
 
         wordDiv.appendChild(wordBtn2);
         wordDiv.setAttribute("id", "canvas_div" + i);
@@ -355,7 +382,7 @@ function updateSlider(p)
     p *= 1;
     if (p)
     {
-        document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#fdc23e';
+        document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#ffffff';
         tempCurrent.innerHTML = p.toFixed(3);
         i = 0;
         while (block[++i] < p);
@@ -364,13 +391,16 @@ function updateSlider(p)
         myVideo.currentTime = now = p + stream[currentBlock].startTime - block[currentBlock];
         tempCurrent2.innerHTML = myVideo.currentTime.toFixed(3);
     } else
-        tempCurrent2.innerHTML = myVideo.currentTime = now = currentBlock = 1;
+    {
+        tempCurrent2.innerHTML = myVideo.currentTime = now =0;
+        currentBlock = 1;
+    }
 }
 
 function videoMove(cliked_id)
 {
     let index = cliked_id.substring(10);
-    document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#fdc23e';
+    document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#ffffff';
     currentBlock = index * 1;
     myVideo.currentTime = stream[index].startTime;
     tempCurrent2.innerHTML = myVideo.currentTime.toFixed(3);
@@ -445,8 +475,9 @@ function setCurrentBlockColor()
 {
     if (currentBlock != 0)
     {
-        if (currentBlock > 1)
-            document.getElementById("canvas_btn" + (currentBlock * 1 - 1)).style.backgroundColor = '#fdc23e';
+        if (currentBlock > 1){
+            document.getElementById("canvas_btn" + (currentBlock * 1 - 1)).style.backgroundColor = '#ffffff';
+        }
         document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = 'rgb(236, 92, 76)';
     }
 }
@@ -461,7 +492,7 @@ function videoPlayPause()
     if (!myVideo.paused)
     {
         myVideo.pause();
-        document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#fdc23e';
+        document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#ffffff';
         playButton.innerHTML = '<img src="images/playVideoButton.png" width=20px height=20px alt="">';
     } else if (stream.length)
     {
@@ -479,7 +510,7 @@ function videoPlay()
 function videoStop()
 {
     myVideo.pause();
-    document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#fdc23e';
+    document.getElementById("canvas_btn" + currentBlock).style.backgroundColor = '#ffffff';
     playButton.innerHTML = '<img src="images/playVideoButton.png" width=20px height=20px alt="">';
     currentBlock = 1;
     slider.value = 0;

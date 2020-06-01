@@ -14,8 +14,8 @@
         로고 클릭 시 처음 페이지로 이동합니다.
         보관함 클릭 시 동영상 추가 등의 창으로 이동합니다.-->
     <div class="sidenav">
-        <a href="DefaultLayer.html">AI TUBE</a>
-        <a href="Library.html">보관함</a>
+        <a href="DefaultLayer.html"><img src="images/logo.png" width="auto" height=20px/></a>
+        <a id="sidebar_selected" href="Library.html">보관함</a>
         <a href="#Subtitle">자막</a>
         <a href="#Music">음악</a>
         <a href="#Filter">필터</a>
@@ -23,22 +23,30 @@
         <a href="#FaceModulation">얼굴 변경</a>
         <a href="#VoiceModulation">음성 변조</a>
         <a href="#Speed">속도</a>
-        <a href="#Mosaic">모자이크</a>
+        <a href="ztest://">모자이크</a>
         <a href="#PIP">PIP</a>
     </div>
 
-    <!--음성 인식으로 들어오는 자막에 대한 정보를 표시 합니다.
-        저장 버튼도 있습니다.-->
-    <div class="subtitleScreen">
-        <a id="save" href="#Save">저장</a>
+    <h1>Welcome to AITUBE!</h1>
+ 
+
+    <!--편집된 현재 상황이 텍스트로 나타나는 단락입니다.
+        캔버스라고 정의했습니다.-->
+    <div class="canvas" id="canvas">
+
     </div>
 
-    <div class="main">
-        <h4>AI TUBE</h2>
-            <p>Make your own videos with us!</p>
-            <p>Start by adding video sources.</p>
+    <!--블록들을 저장하는 단락입니다.
+        팔레트라고 정의했습니다.-->
+    <div class="pallet" id="pallet">
     </div>
 
+    <!--편집 기능들을 저장하는 단락입니다.-->
+    <div class="edit_tools">
+        <button id="trashBin" ondrop="streamDelete(event)" ondragover="allowDrop(event)"><img src="images/trashBinButton.png" height=40px></button>
+        <a id="save" href = "" onclick="urlGenerator()">Export</a>
+        <button id="undo" onclick="undo()"><img src="images/undoButton.png" height=40px></button>
+    </div>
 </body>
 
 </html>
